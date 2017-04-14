@@ -79,6 +79,15 @@ public class Checkin implements FoursquareEntity {
   }
   
   /**
+   * Returns timezone offset of the checkin
+   * 
+   * @return timezone offset of the checkin
+   */
+  public Integer getTimeZoneOffset() {
+    return timeZoneOffset;
+  }
+  
+  /**
    * Returns venue if any
    * 
    * @return venue if any
@@ -168,6 +177,7 @@ public class Checkin implements FoursquareEntity {
   private CompactUser user;
   private Boolean isMayor;
   private String timeZone;
+  private Integer timeZoneOffset;
   private CompleteVenue venue;
   private Location location;
   private String shout;

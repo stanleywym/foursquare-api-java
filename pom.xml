@@ -49,9 +49,15 @@
 
 	<distributionManagement>
 		<repository>
-			<id>foursquareapijava</id>
-			<url>svn:https://foursquare-api-java.googlecode.com/svn/repository</url>
+			<id>D0587</id>
+			<name>D0587-releases</name>
+			<url>http://172.16.1.80:8081/artifactory/libs-release-local</url>
 		</repository>
+		<snapshotRepository>
+			<id>D0587</id>
+			<name>D0587-snapshots</name>
+			<url>http://172.16.1.80:8081/artifactory/libs-snapshot-local</url>
+		</snapshotRepository>
 	</distributionManagement>
 
 	<build>
