@@ -22,59 +22,55 @@ import fi.foyt.foursquare.api.FoursquareEntity;
  */
 public class List implements FoursquareEntity {
 
-  private static final long serialVersionUID = -7255898184182462517L;
-  
-  // TODO
-  private String id;
-  private String name;
-  private String description;
-  private String type;
-  private String user;
-  private String following;
-  private String followers;
-  private String editable;
-  private String collaborative;
-  private String collaborators;
-  private String url;
-  private String canonicalUrl;
-  private String photo;
-  private String venueCount;
-  private String visitedCount;
-  private String listItems;
-  private String createdAt;
-  private String updatedAt;
-  private String entities;
-  private Boolean isPublic;
-  private Boolean logView;
+	private static final long serialVersionUID = -7255898184182462517L;
 
-  public void setPublic(Boolean isPublic) {
-    this.isPublic = isPublic;
-  }
+	// TODO
+//	private String id;
+//	private String name;
+//	private String description;
+//	private String type;
+//	private String user;
+//	private String following;
+//	private String followers;
+	private Boolean editable;
+	private Boolean collaborative;
+//	private String collaborators;
+//	private String url;
+//	private String canonicalUrl;
+//	private String photo;
+//	private String venueCount;
+//	private String visitedCount;
+//	private String listItems;
+//	private String createdAt;
+//	private String updatedAt;
+//	private String entities;
+	private Boolean isPublic;
+//	private Boolean logView;
 
-  @Override
-  public String toString() {
-    return "List{" +
-            "id='" + id + '\'' +
-            ", name='" + name + '\'' +
-            ", description='" + description + '\'' +
-            ", type='" + type + '\'' +
-            ", user='" + user + '\'' +
-            ", following='" + following + '\'' +
-            ", followers='" + followers + '\'' +
-            ", editable='" + editable + '\'' +
-            ", collaborative='" + collaborative + '\'' +
-            ", collaborators='" + collaborators + '\'' +
-            ", url='" + url + '\'' +
-            ", canonicalUrl='" + canonicalUrl + '\'' +
-            ", photo='" + photo + '\'' +
-            ", venueCount='" + venueCount + '\'' +
-            ", visitedCount='" + visitedCount + '\'' +
-            ", listItems='" + listItems + '\'' +
-            ", createdAt='" + createdAt + '\'' +
-            ", updatedAt='" + updatedAt + '\'' +
-            ", entities='" + entities + '\'' +
-            ", isPublic=" + isPublic +
-            ", logView=" + logView +
-            '}';
-  }
+	public void setPublic(Boolean isPublic) {
+		this.isPublic = isPublic;
+	}
+	
+	public Boolean getPublic() {
+		return isPublic;
+	}
+
+	public Boolean getEditable() {
+		return editable;
+	}
+
+	public Boolean getCollaborative() {
+		return collaborative;
+	}
+
+//	@Override
+//	public String toString() {
+//		return "List{" + "id='" + id + '\'' + ", name='" + name + '\'' + ", description='" + description + '\'' + ", type='" + type + '\'' + ", user='" + user
+//				+ '\'' + ", following='" + following + '\'' + ", followers='" + followers + '\'' + ", editable='" + editable + '\'' + ", collaborative='"
+//				+ collaborative + '\'' + ", collaborators='" + collaborators + '\'' + ", url='" + url + '\'' + ", canonicalUrl='" + canonicalUrl + '\''
+//				+ ", photo='" + photo + '\'' + ", venueCount='" + venueCount + '\'' + ", visitedCount='" + visitedCount + '\'' + ", listItems='" + listItems
+//				+ '\'' + ", createdAt='" + createdAt + '\'' + ", updatedAt='" + updatedAt + '\'' + ", entities='" + entities + '\'' + ", isPublic=" + isPublic
+//				+ ", logView=" + logView + '}';
+//	}
+
 }

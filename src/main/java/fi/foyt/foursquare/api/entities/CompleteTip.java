@@ -42,12 +42,16 @@ public class CompleteTip extends CompactTip {
     return done;
   }
   
+  public Likes getLikes() {
+    return likes;
+  }
+  
   private UserGroups todo;
   private UserGroups done;
+  private Likes likes;
   
   // TODO
   private String canonicalUrl;
-  private String likes;
   private Boolean like;
   private Boolean logView;
 
@@ -71,4 +75,5 @@ public class CompleteTip extends CompactTip {
             ", logView=" + logView +
             '}';
   }
+
 }

@@ -63,11 +63,11 @@ public class CompactUser implements FoursquareEntity {
   }
   
   /**
-   * Returns URL of a profile picture for this user.
+   * Returns photo of the user
    * 
-   * @return URL of a profile picture for this user.
+   * @return photo of the user
    */
-  public String getPhoto() {
+  public Photo getPhoto() {
     return photo;
   }
   
@@ -93,7 +93,7 @@ public class CompactUser implements FoursquareEntity {
   protected String firstName;
   protected String lastName;
   protected String homeCity;
-  protected String photo;
+  protected Photo photo;
   protected String gender;
   protected String relationship;
   
@@ -107,7 +107,7 @@ public class CompactUser implements FoursquareEntity {
             ", firstName='" + firstName + '\'' +
             ", lastName='" + lastName + '\'' +
             ", homeCity='" + homeCity + '\'' +
-            ", photo='" + photo + '\'' +
+            ", photo='" + photo.getUrl() + '\'' +
             ", gender='" + gender + '\'' +
             ", relationship='" + relationship + '\'' +
             ", type='" + type + '\'' +
